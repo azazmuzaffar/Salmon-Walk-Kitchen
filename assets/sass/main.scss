@@ -1,0 +1,15 @@
+@import "partials/utilities/fonts";
+@import "partials/utilities/variables";
+@import "partials/utilities/breakpoints";
+
+@import "partials/base/typography";
+@import "partials/base/generics";
+
+@import "partials/layout/header";
+@import "partials/layout/footer";
+
+@import "partials/components/hero";
+@import "partials/components/explore-our-kitchen";
+@import "partials/components/discover";
+@import "partials/components/explore";
+@import "partials/components/modals";

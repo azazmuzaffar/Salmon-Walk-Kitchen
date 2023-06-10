@@ -1,0 +1,98 @@
+.font-light {
+    font-weight: 300;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-demi {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-black {
+    font-weight: 800;
+}
+
+.font-brandon {
+    font-family: $font-brandon-grotesque;
+}
+
+.font-heavitas {
+    font-family: $font-haavitas;
+}
+
+h1,
+.h1 {
+    font-size: 10vw;
+    line-height: 1;
+}
+
+h2,
+.h2 {
+    font-size: 65px;
+    line-height: 1.276;
+
+    @include sm {
+        font-size: 48px;
+    }
+
+    @include xs {
+        font-size: 38px;
+    }
+}
+
+h3,
+.h3 {
+    font-size: 3vw;
+    line-height: 1.33;
+}
+
+h5,
+.h5 {
+    font-size: 42px;
+    line-height: 1.285;
+
+    @include xs {
+        font-size: 32px;
+    }
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.409;
+
+    @include sm {
+        font-size: 20px;
+    }
+
+    @include xs {
+        font-size: 18px;
+    }
+}
+
+.copy-lg {
+    font-size: 27px;
+    line-height: 1.407;
+
+    @include xs {
+        font-size: 20px;
+    }
+}
+
+.copy-sm {
+    font-size: 18px;
+    line-height: 1.44;
+
+    @include xs {
+        font-size: 16px;
+    }
+}

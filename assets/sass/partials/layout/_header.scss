@@ -1,0 +1,40 @@
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+
+    .navbar {
+        padding: calc(var(--hero-height) * 0.0408) 31px;
+
+        @include xs {
+            padding: calc(var(--hero-height) * 0.0208) 0;
+        }
+
+        &-brand {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 102.28px;
+
+            svg,
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            @include sm {
+                max-width: 80px;
+            }
+
+            @include xs {
+                max-width: 62px;
+            }
+
+            @include xxs {
+                max-width: 55px;
+            }
+        }
+    }
+}

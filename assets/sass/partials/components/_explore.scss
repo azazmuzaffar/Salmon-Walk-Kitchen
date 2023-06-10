@@ -1,0 +1,211 @@
+.explore-us {
+    overflow: hidden;
+
+    @include md {
+        overflow: auto;
+    }
+
+    &>.row {
+        min-height: 100vh;
+    }
+
+    &__content {
+        position: relative;
+        padding: 53px 64px;
+        background: $dark-blue;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-right: -1px;
+        z-index: 9;
+
+        @include xl {
+            padding: 48px 56px;
+        }
+
+        @include lg {
+            padding: 36px 48px;
+        }
+
+        @include xs {
+            padding: 32px 28px 36px;
+        }
+
+        &--title,
+        &--body,
+        &--link {
+            position: relative;
+            z-index: 4;
+        }
+
+        &--title {
+            margin-bottom: 70px;
+
+            @include xl {
+                margin-bottom: 64px;
+            }
+
+            @include lg {
+                margin-bottom: 48px;
+            }
+
+            h2 {
+                font-size: 44px;
+                line-height: 1.272;
+                color: $light-green;
+                font-family: $font-haavitas;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: $black;
+                letter-spacing: 2.2px;
+                text-transform: uppercase;
+
+                @include xl {
+                    font-size: 40px;
+                }
+
+                @include lg {
+                    font-size: 36px;
+                }
+
+                @include xs {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        &--body {
+            .instructions {
+                display: flex;
+                align-items: center;
+
+                @include xl {
+                    display: block;
+                }
+
+                .icon-wrapper {
+                    width: 100%;
+                    max-width: 131px;
+                    min-width: 100px;
+                    margin-right: 32px;
+
+                    @include xl {
+                        max-width: 100px;
+                        min-width: 100px;
+                        margin-bottom: 24px;
+                    }
+
+                    @include lg {
+                        max-width: 80px;
+                        min-width: 80px;
+                    }
+
+                    svg,
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .text-wrapper {
+                    flex-grow: 1;
+
+                    @include md {
+                        width: 100%;
+                        max-width: 492px;
+                    }
+
+                    @include xxs {
+                        width: 100%;
+                        max-width: 282px;
+                    }
+
+                    p {
+                        @include lg {
+                            font-size: 24px;
+                        }
+
+                        @include xs {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--link {
+
+            &>a {
+                display: flex;
+                align-items: center;
+                width: fit-content;
+
+                svg {
+                    min-width: 44px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &--bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top right;
+            }
+        }
+    }
+
+    &__map {
+        height: 100%;
+        position: relative;
+
+        @include md {
+            height: auto;
+            padding-top: 90%;
+        }
+
+        &--map,
+        &--no,
+        &--fish {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            img,
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top left;
+            }
+
+            svg {
+                width: 100vw;
+            }
+        }
+
+        &--fish {
+            .locations {
+                &__each {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
