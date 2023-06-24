@@ -5,6 +5,9 @@ $screen-md-max: 1199.98px;
 $screen-lg-max: 1399.98px;
 $screen-xl-max: 1599.98px;
 
+
+$screen-lg-min: 1399.98px;
+
 // Extra Small devices
 @mixin xxs {
     @media (max-width: #{$screen-xxs-max}) {
@@ -43,6 +46,13 @@ $screen-xl-max: 1599.98px;
 // Extra large devices
 @mixin xl {
     @media (max-width: #{$screen-xl-max}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg-up {
+    @media (min-width: #{$screen-lg-min}) {
         @content;
     }
 }

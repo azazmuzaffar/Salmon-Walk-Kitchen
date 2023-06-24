@@ -3,6 +3,8 @@ body {
     margin: 0;
     font-family: $font-brandon-grotesque;
     font-size: 22px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 ::-webkit-scrollbar {

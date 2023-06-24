@@ -6,10 +6,18 @@
     z-index: 99;
 
     .navbar {
-        padding: calc(var(--hero-height) * 0.0408) 31px;
+        padding: 44px 31px;
 
         @include xs {
-            padding: calc(var(--hero-height) * 0.0208) 0;
+            padding: 19px 0;
+        }
+
+        .page-home & {
+            padding: calc(var(--hero-height) * 0.0408) 31px;
+
+            @include xs {
+                padding: calc(var(--hero-height) * 0.0208) 0;
+            }
         }
 
         &-brand {

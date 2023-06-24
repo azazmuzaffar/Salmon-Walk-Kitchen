@@ -1,13 +1,6 @@
 .site-footer {
     background: $light-green;
 
-    &__image {
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
-
     &__copyright {
         padding: 40px 70px;
         background: $dark-blue;

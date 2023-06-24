@@ -40,6 +40,7 @@
 
             @include xs {
                 height: calc(76px + 7vh);
+                bottom: calc(100% + 10px);
             }
         }
 

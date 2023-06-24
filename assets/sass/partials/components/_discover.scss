@@ -1,13 +1,21 @@
 .discover {
     position: relative;
-    padding: 45px 0;
     background: $light-green;
 
-    @include xs {
-        padding: 32px 0;
+    &__image {
+        img {
+            width: 100%;
+            height: auto;
+            mix-blend-mode: multiply;
+        }
     }
 
     &__caption {
+        padding: 45px 0;
+
+        @include xs {
+            padding: 32px 0;
+        }
 
         .content-wrapper {
             width: 100%;
@@ -42,7 +50,6 @@
                 margin-top: 58px;
             }
 
-
             .link-with-lines {
                 margin: 0;
                 position: relative;
@@ -58,9 +65,11 @@
                     letter-spacing: 10px;
                     color: $yellow !important;
                     background: $light-green;
-                    padding-left: 70px;
-                    padding-right: 60px;
+                    padding-left: 50px;
+                    padding-right: 35px;
                     z-index: 2;
+                    border-left: 3px solid $yellow;
+                    border-right: 3px solid $yellow;
 
                     @include md {
                         font-size: 36px;
