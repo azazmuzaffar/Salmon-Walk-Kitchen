@@ -209,3 +209,41 @@
         }
     }
 }
+
+
+.audio-link {
+    font-size: 27px;
+    line-height: 1.2;
+    font-weight: bold;
+    padding: 18px;
+    background: #f6d388c9;
+    color: $dark-blue !important;
+    width: 100%;
+    max-width: 174px;
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 17px;
+
+    @media (max-height: 700px) {
+        max-width: 158px;
+        font-size: 24px;
+    }
+
+    @include xs {
+        top: 52px;
+        left: 10px;
+        max-width: 158px;
+        font-size: 24px;
+    }
+
+    @include xxs {
+        padding: 14px;
+        max-width: 119px;
+        font-size: 18px;
+    }
+
+    &:hover {
+        background: #f6d388ee;
+    }
+}

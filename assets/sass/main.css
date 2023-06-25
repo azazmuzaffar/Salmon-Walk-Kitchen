@@ -1068,6 +1068,45 @@ a {
   cursor: pointer;
 }
 
+.audio-link {
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: bold;
+  padding: 18px;
+  background: rgba(246, 211, 136, 0.7882352941);
+  color: #195363 !important;
+  width: 100%;
+  max-width: 174px;
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 17px;
+}
+@media (max-height: 700px) {
+  .audio-link {
+    max-width: 158px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .audio-link {
+    top: 52px;
+    left: 10px;
+    max-width: 158px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 575.98px) {
+  .audio-link {
+    padding: 14px;
+    max-width: 119px;
+    font-size: 18px;
+  }
+}
+.audio-link:hover {
+  background: rgba(246, 211, 136, 0.9333333333);
+}
+
 .stewardship {
   position: relative;
   padding: 70px 0 47px;

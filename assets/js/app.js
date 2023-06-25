@@ -81,14 +81,15 @@ if (exploreKitchen) {
 
 // Location Click and Opening Popup
 jQuery(".locations__each").on("click", function (event) {
+  let link = jQuery(this).attr("data-link");
+
   var items = [];
   jQuery(".locations__each").each(function () {
-    console.log(jQuery(this).attr("href"));
     items.push({
       src: jQuery(this).attr("href"),
+      link: link,
     });
   });
-  console.log(items);
 
   // Get the index of the current selected item
   var index = jQuery(this).index() - 1;
@@ -99,6 +100,7 @@ jQuery(".locations__each").on("click", function (event) {
 
       items: items,
       image: {
+        markup: '<div class="mfp-figure">' + '<div class="mfp-close"></div>' + '<div class="mfp-img"></div>' + (link ? '<a href="' + link + '" class="audio-link">Click to hear the story of Fog Woman</a>' : "") + '<div class="mfp-bottom-bar">' + '<div class="mfp-title"></div>' + '<div class="mfp-counter"></div>' + "</div>" + "</div>",
         titleSrc: function (item) {
           return item.data.titleSrc;
         },
